@@ -14,7 +14,7 @@ const InputTodo = ({ setTodosChange }) => {
       myHeaders.append("jwt_token", localStorage.token);
 
       const body = { description, day, time};
-      const response = await fetch("http://localhost:5000/dashboard/todos", {
+      const response = await fetch("testtodoappserver.herokuapp.com/dashboard/todos", {
         method: "POST",
         headers: myHeaders,
         body: JSON.stringify(body)
