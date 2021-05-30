@@ -13,7 +13,7 @@ const Dashboard = ({ setAuth }) => {
 
   const getProfile = async () => {
     try {
-      const res = await fetch("testtodoappserver.herokuapp.com/dashboard/", {
+      const res = await fetch(`https://testtodoappserver.herokuapp.com/dashboard/`, {
         method: "GET",
         headers: { jwt_token: localStorage.token }
       });

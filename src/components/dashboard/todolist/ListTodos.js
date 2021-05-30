@@ -9,7 +9,7 @@ const ListTodos = ({ allTodos, setTodosChange }) => {
 
   async function deleteTodo(id) {
     try {
-      await fetch(`testtodoappserver.herokuapp.com/dashboard/todos/${id}`, {
+      await fetch(`https://testtodoappserver.herokuapp.com/dashboard/todos/${id}`, {
         method: "DELETE",
         headers: { jwt_token: localStorage.token }
       });
