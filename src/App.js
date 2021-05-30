@@ -22,7 +22,7 @@ toast.configure();
 function App() {
   const checkAuthenticated = async () => {
     try {
-      const res = await fetch("testtodoappserver.herokuapp.com/authentication/verify", {
+      const res = await fetch(`http://testtodoappserver.herokuapp.com/authentication/verify`, {
         method: "POST",
         headers: { jwt_token: localStorage.token }
       });

@@ -19,7 +19,7 @@ const Register = ({ setAuth }) => {
     try {
       const body = { email, password, name };
       const response = await fetch(
-        "testtodoappserver.herokuapp.com/authentication/register",
+        `testtodoappserver.herokuapp.com/authentication/register`,
         {
           method: "POST",
           headers: {
